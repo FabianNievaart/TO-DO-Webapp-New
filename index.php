@@ -3,7 +3,7 @@ require_once 'core/init.php';
 
 $item = db::getInstance()->query("SELECT * FROM todo");
 
-echo "<a href='add.php'>Add new to do</a><br>
+echo "<a href='insert.php'>Add new to do</a><br>
       <table style='border: solid 1px black;'>
         <thead>
             <tr>
@@ -26,7 +26,12 @@ if(!$item->count()){
     }
 }
 echo "</tbody>
-      </table>"
+      </table>";
+
+if(session::exists('success')){
+    echo session::flash('success');
+}
+
 ?>
 
 </body>
