@@ -34,13 +34,6 @@ if(Input::exists()) {
     }
 }
 
-/*$itemInsert = DB::getInstance()->insert('todo', array(
-    'todo' => 'new todo'
-));
-
-if($itemInsert){
-    //success
-}*/
 ?>
 
 <form action="" method="post">

@@ -43,6 +43,3 @@ if(session::exists('success')){
 }
 
 ?>
-
-</body>
-</html>
